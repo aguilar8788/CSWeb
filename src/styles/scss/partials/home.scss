@@ -1,9 +1,8 @@
 .home {
   .section1 {
-  //background-image: url("../../images/hand.jpeg");
 
   height: 100vh;
-
+//background: rgb(235, 235, 235);
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -13,10 +12,11 @@
       position: absolute;
       width: 100vw;
       height: 100vh;
-      //background-color: rgba(0,0,0, .5);
 
     }
     .contentWrapper {
+      z-index: -1;
+      background: rgba(240, 240, 240, 0.5);
       .logo {
         width: 100vw;
         height: 50vh;
@@ -27,11 +27,11 @@
         position: absolute;
         h1 {
           font-size: 90px;
-          font-family: 'Montserrat', sans-serif;
+          //font-family: 'Montserrat', sans-serif;
+          font-family: 'Maven Pro', sans-serif;
         }
       }
       position: fixed;
-      z-index: -1;
       width: 100vw;
       height: 100vh;
       display: flex;
@@ -40,9 +40,8 @@
       align-items: center;
       .candleStick1 {
         position: absolute;
+        z-index: -1;
 
-
-        z-index: -2;
         margin-left: 13px;
         margin-top: -15px;
         width: 3px;
@@ -94,17 +93,23 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+    height: 92vh;
     .content {
       width: 100vw;
-      height: 100vh;
+      height: 92vh;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
       background-color: rgba(144,184,92, .8);
+      .subjectsHead {
+        margin-top: 5%;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
       h1 {
-        margin-top: 40px;
         color: white;
         font-family: 'Maven Pro', sans-serif;
       }
@@ -119,9 +124,9 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: baseliner;
+        align-items: baseline;
         width: 90vw;
-        height: 60vh;
+        height: 30vh;
         .subject {
           display: flex;
           flex-direction: column;
@@ -158,13 +163,51 @@
     width: 100vw;
     height: 100vh;
   }
+  .savages {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    position: relative;
+    z-index: 2;
+    width: 100vw;
+    height: auto;
+    background: white;
+
+    box-sizing: border-box;
+    .imageContainer {
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: baseline;
+      max-height:100%;
+      .savageImage {
+        z-index: 1;
+        width: 80%;
+        height: 80%;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      }
+      //.savageImage:hover {
+      //  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      //}
+      .bio {
+        width: 250px;
+        .para {
+          width: 250px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
   footer {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
+    background-color: rgba(200, 200, 200, 0.9);
+    p {
+      margin: 0;
+      padding: 0;
+    }
   }
 }

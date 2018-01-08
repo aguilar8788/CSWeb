@@ -159,13 +159,14 @@ class Home extends Component {
                 </div>
                 <div className="contentWrapper2">
                     <div className="content">
-
-                        <h1>What we do</h1>
-                        <p>
-                            Crypto can be a confusing subject to wrap your head around. The Crypto Savages are here to change that.
-                            We take the convoluted subjects that encompass the block chain world, and explain it in a language that the
-                            rest of us understand.
-                        </p>
+                        <div className="subjectsHead">
+                            <h1>What we do</h1>
+                            <p>
+                                Crypto can be a confusing subject to wrap your head around. The Crypto Savages are here to change that.
+                                We take the convoluted subjects that encompass the block chain world, and explain it in a language that the
+                                rest of us understand.
+                            </p>
+                        </div>
                         <div className="subjects">
                             <div className="subject">
                                 <h1>Trading/Exchanges</h1>
@@ -201,6 +202,22 @@ class Home extends Component {
                                 Follow Us on YouTube
                             </a>
                         </p>
+                    </div>
+                </div>
+                <div className="savages">
+                    <div className="imageContainer">
+                    <div className="bio">
+                        <img className="savageImage" src={require('../../../images/JT.png')}/>
+                        <p className="para">Joe is an IT Savage and all American fuck boi.</p>
+                    </div>
+                    <div className="bio">
+                        <img className="savageImage" src={require('../../../images/PA.png')} />
+                        <p>Mexican of the year. Loves tacos</p>
+                    </div>
+                    <div className="bio">
+                        <img className="savageImage" src={require('../../../images/KV.png')} />
+                        <p>People call him the king of crypto. We just call him KV afsldfkjasldkfjalsdkfjlaksdfads</p>
+                    </div>
                     </div>
                 </div>
                 <footer>

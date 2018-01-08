@@ -41,11 +41,14 @@
     .navigation ul .socialDropDown:hover {
       color: #88c5f6; }
     .navigation ul .socialMedia {
+      margin-top: 10px;
       display: none;
       flex-direction: column;
       position: absolute;
-      z-index: 100;
-      margin-top: 20px;
-      left: 86.5%; }
+      left: 80%;
+      z-index: -1;
+      border-top: none; }
+      .navigation ul .socialMedia li {
+        margin: 0 20px 0 0; }
 
 /*# sourceMappingURL=navBar.css.map */

@@ -59,16 +59,15 @@
       color: hsl(207,86%,75%)
     }
     .socialMedia {
-      // do not forget about this
+      margin-top: 10px;
       display: none;
       flex-direction: column;
-
       position: absolute;
-      z-index: 100;
-      margin-top: 20px;
-      left: 86.5%;
-
+      left: 80%;
+      z-index: -1;
+      border-top: none;
       li {
+        margin: 0 20px 0 0;
       }
     }
   }

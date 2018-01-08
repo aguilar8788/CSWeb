@@ -32,10 +32,10 @@ class NavBar extends Component {
                     <li><IndexLink to="/discussions" activeClassName="active">Discussions</IndexLink></li>
                     <li><IndexLink to="/contact" activeClassName="active">Contact</IndexLink></li>
                     <li className="socialDropDown" onClick={this.showSocialDropDown}><a href="#">Social Media</a></li>
-                    <ul className="socialMedia" onMouseLeave={this.showSocialDropDown} style={this.state.showSocial  == false ? {display: 'none'} : {display: 'flex'}}>
-                        <li><a className="socialBrands" href="#" target="_blank">youtube</a></li>
-                        <li><a className="socialBrands" href="#" target="_blank">facebook</a></li>
-                        <li><a className="socialBrands" href="#" target="_blank">twitter</a></li>
+                    <ul className="socialMedia dropdown-menu" onMouseLeave={this.showSocialDropDown} style={this.state.showSocial  == false ? {display: 'none'} : {display: 'inline-block'}}>
+                        <li><a className="socialBrands dropdown-item" href="https://www.youtube.com/channel/UCNS1QZfqHVIGAEk2Ng_xHkA?view_as=subscriber" target="_blank">youtube</a></li>
+                        {/*<li><a className="socialBrands dropdown-item" href="#" target="_blank">facebook</a></li>*/}
+                        <li><a className="socialBrands dropdown-item" href="https://twitter.com/crypto_savages" target="_blank">twitter</a></li>
                     </ul>
                 </ul>
             </nav>

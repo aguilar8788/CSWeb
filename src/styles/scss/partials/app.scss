@@ -1,10 +1,12 @@
+body {
+  overflow-x:hidden;
+}
 .app {
-  width: 100vw;
   .head {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    width: 100%;
+    width: 100vw;
 
   }
 }
