@@ -108,6 +108,7 @@ class Home extends Component {
             height: this.state.logo.height,
             transition: this.state.logo.transition
         }
+        let currentTime = new Date()
         console.log("state", this.state)
         console.log("props", this.props)
         return(
@@ -167,7 +168,7 @@ class Home extends Component {
                         </p>
                         <div className="subjects">
                             <div className="subject">
-                                <h1>Crypto Trading/Exchanges</h1>
+                                <h1>Trading/Exchanges</h1>
                                 <p>
                                     In depth explanations showing you how easy it is to get started with crypto trading. How is a crypto coin different from a stock
                                     We will get you up and running buying alt coins, and also show how to store them.
@@ -202,6 +203,10 @@ class Home extends Component {
                         </p>
                     </div>
                 </div>
+                <footer>
+                    <p>Disclaimer: We do not give financial advice. Our videos are for informational purposes only.</p>
+                    <p>&copy;The Crypto Savages {currentTime.getFullYear()}</p>
+                </footer>
             </div>
         )
     }

@@ -27,7 +27,8 @@
       justify-content: space-between;
       position: absolute; }
       .home .section1 .contentWrapper .logo h1 {
-        font-size: 90px; }
+        font-size: 90px;
+        font-family: 'Montserrat', sans-serif; }
     .home .section1 .contentWrapper .candleStick1 {
       position: absolute;
       z-index: -2;
@@ -76,12 +77,14 @@
     background-color: rgba(144, 184, 92, 0.8); }
     .home .contentWrapper2 .content h1 {
       margin-top: 40px;
-      color: white; }
+      color: white;
+      font-family: 'Maven Pro', sans-serif; }
     .home .contentWrapper2 .content p {
       width: 60vw;
       font-size: 20px;
       color: white;
-      text-align: center; }
+      text-align: center;
+      font-family: 'Open Sans Condensed', sans-serif; }
     .home .contentWrapper2 .content .subjects {
       display: flex;
       flex-direction: row;
@@ -96,10 +99,11 @@
         align-items: center;
         width: 25vw; }
         .home .contentWrapper2 .content .subjects .subject h1 {
-          font-size: 30px; }
+          font-size: 35px; }
         .home .contentWrapper2 .content .subjects .subject p {
           width: 75%;
-          font-size: 18px; }
+          font-size: 20px;
+          font-family: 'Open Sans Condensed', sans-serif; }
 .home .followUs {
   background: rgba(0, 0, 0, 0.7);
   display: flex;
@@ -115,5 +119,13 @@
   .home .followUs h2 {
     font-size: 40px;
     color: white; }
+.home footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white; }
 
 /*# sourceMappingURL=home.css.map */

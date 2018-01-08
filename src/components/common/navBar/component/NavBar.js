@@ -22,7 +22,7 @@ class NavBar extends Component {
         return (
             <nav className="navigation navbar fixed-top">
                 <div className="logo">
-                    <IndexLink className="logoLink" to="/" activeClassName="active"><h1>The Crypto Savages</h1></IndexLink>
+                    <IndexLink className="logoLink" to="/" activeClassName="active"><h1>THE CRYPTO SAVAGES</h1></IndexLink>
                 </div>
                 <ul>
                     <li><IndexLink to="/data" activeClassName="active">Data</IndexLink></li>
