@@ -45,7 +45,7 @@ class Home extends Component {
 
     handleScroll(event) {
         let scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
-        if (scrollTop < 50) {
+        if (scrollTop < 20) {
             this.setState({
                 candle1: {
                     marginTop: '',
@@ -107,7 +107,7 @@ class Home extends Component {
         }
 
         return (
-            <div className="contentWrapper">
+            <div className="candles">
                 <div className="wick" style={candleStyle1}>
                     <div className="candleStick1">
                     </div>
@@ -170,7 +170,7 @@ class Home extends Component {
                             <p>
                                 Crypto can be a confusing subject to wrap your head around. The Crypto Savages are here to change that.
                                 We take the convoluted subjects that encompass the block chain world, and explain it in a language that the
-                                rest of us understand.
+                                rest of us understands.
                             </p>
                         </div>
                         <div className="subjects">
