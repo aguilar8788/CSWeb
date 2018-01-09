@@ -1,165 +1,181 @@
-.home .section1 {
-  height: 100vh;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .home .section1 .back {
-    position: absolute;
-    width: 100vw;
-    height: 100vh; }
-  .home .section1 .contentWrapper {
-    z-index: -1;
-    background: rgba(240, 240, 240, 0.5);
-    position: fixed;
-    width: 100vw;
+.home {
+  /* Portrait and Landscape */ }
+  .home .section1 {
     height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-    .home .section1 .contentWrapper .logo {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .home .section1 .back {
+      position: absolute;
       width: 100vw;
-      height: 50vh;
+      height: 100vh; }
+    .home .section1 .contentWrapper {
+      z-index: -1;
+      background: rgba(240, 240, 240, 0.5);
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .home .section1 .contentWrapper .logo {
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute; }
+        .home .section1 .contentWrapper .logo h1 {
+          font-size: 90px;
+          font-family: 'Maven Pro', sans-serif; }
+      .home .section1 .contentWrapper .candleStick1 {
+        position: absolute;
+        z-index: -1;
+        margin-left: 13px;
+        margin-top: -15px;
+        width: 3px;
+        height: 170px;
+        background-color: black; }
+      .home .section1 .contentWrapper .wick:nth-child(odd) {
+        background-color: #84BA4D; }
+      .home .section1 .contentWrapper .wick {
+        margin-left: 40px;
+        border: 1px solid black;
+        width: 30px;
+        height: 130px;
+        background-color: #c43905; }
+  .home .section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* The image used */
+    background-image: url("../../images/hand.jpeg");
+    /* Set a specific height */
+    height: 100vh;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .home .contentWrapper2 {
+    background-image: url("../../images/mapBack.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 92vh; }
+    .home .contentWrapper2 .content {
+      width: 100vw;
+      height: 92vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-between;
-      position: absolute; }
-      .home .section1 .contentWrapper .logo h1 {
-        font-size: 90px;
-        font-family: 'Maven Pro', sans-serif; }
-    .home .section1 .contentWrapper .candleStick1 {
-      position: absolute;
-      z-index: -1;
-      margin-left: 13px;
-      margin-top: -15px;
-      width: 3px;
-      height: 170px;
-      background-color: black; }
-    .home .section1 .contentWrapper .wick:nth-child(odd) {
-      background-color: #84BA4D; }
-    .home .section1 .contentWrapper .wick {
-      margin-left: 40px;
-      border: 1px solid black;
-      width: 30px;
-      height: 130px;
-      background-color: #c43905; }
-.home .section2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* The image used */
-  background-image: url("../../images/hand.jpeg");
-  /* Set a specific height */
-  height: 100vh;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-.home .contentWrapper2 {
-  background-image: url("../../images/mapBack.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 92vh; }
-  .home .contentWrapper2 .content {
-    width: 100vw;
-    height: 92vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(144, 184, 92, 0.8); }
-    .home .contentWrapper2 .content .subjectsHead {
-      margin-top: 5%;
-      margin-bottom: 80px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-    .home .contentWrapper2 .content h1 {
-      color: white;
-      font-family: 'Maven Pro', sans-serif; }
-    .home .contentWrapper2 .content p {
-      width: 60vw;
-      font-size: 20px;
-      color: white;
-      text-align: center;
-      font-family: 'Open Sans Condensed', sans-serif; }
-    .home .contentWrapper2 .content .subjects {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: baseline;
-      width: 90vw;
-      height: 30vh; }
-      .home .contentWrapper2 .content .subjects .subject {
-        display: flex;
-        flex-direction: column;
-        justify-content: baseline;
-        align-items: center;
-        width: 25vw; }
-        .home .contentWrapper2 .content .subjects .subject h1 {
-          font-size: 35px; }
-        .home .contentWrapper2 .content .subjects .subject p {
-          width: 75%;
-          font-size: 20px;
-          font-family: 'Open Sans Condensed', sans-serif; }
-.home .followUs {
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh; }
-  .home .followUs h1 {
-    font-size: 100px;
-    color: #85ba4f;
-    /* Will override color (regardless of order) */ }
-  .home .followUs h2 {
-    font-size: 40px;
-    color: white; }
-.home .savages {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  position: relative;
-  z-index: 2;
-  width: 100vw;
-  height: auto;
-  background: white;
-  box-sizing: border-box; }
-  .home .savages .imageContainer {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: baseline;
-    max-height: 100%; }
-    .home .savages .imageContainer .savageImage {
-      z-index: 1;
-      width: 80%;
-      height: 80%;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-    .home .savages .imageContainer .bio {
-      width: 250px; }
-      .home .savages .imageContainer .bio .para {
-        width: 250px;
+      background-color: rgba(144, 184, 92, 0.8); }
+      .home .contentWrapper2 .content .subjectsHead {
+        margin-top: 5%;
+        margin-bottom: 80px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center; }
-.home footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(200, 200, 200, 0.9); }
-  .home footer p {
-    margin: 0;
-    padding: 0; }
+      .home .contentWrapper2 .content h1 {
+        color: white;
+        font-family: 'Maven Pro', sans-serif; }
+      .home .contentWrapper2 .content p {
+        width: 60vw;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        font-family: 'Open Sans Condensed', sans-serif; }
+      .home .contentWrapper2 .content .subjects {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 90vw;
+        height: 30vh; }
+        .home .contentWrapper2 .content .subjects .subject {
+          display: flex;
+          flex-direction: column;
+          justify-content: baseline;
+          align-items: center;
+          width: 25vw; }
+          .home .contentWrapper2 .content .subjects .subject h1 {
+            font-size: 35px; }
+          .home .contentWrapper2 .content .subjects .subject p {
+            width: 75%;
+            font-size: 20px;
+            font-family: 'Open Sans Condensed', sans-serif; }
+  .home .followUs {
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh; }
+    .home .followUs h1 {
+      font-size: 100px;
+      color: #85ba4f;
+      /* Will override color (regardless of order) */ }
+    .home .followUs h2 {
+      font-size: 40px;
+      color: white; }
+  .home .savages {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    position: relative;
+    z-index: 2;
+    width: 100vw;
+    height: auto;
+    background: white;
+    box-sizing: border-box; }
+    .home .savages .imageContainer {
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: baseline;
+      max-height: 100%; }
+      .home .savages .imageContainer .savageImage {
+        z-index: 1;
+        width: 80%;
+        height: 80%;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+      .home .savages .imageContainer .bio {
+        width: 250px; }
+        .home .savages .imageContainer .bio p {
+          margin: 0;
+          font-family: 'Maven Pro', sans-serif; }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .home .section1 .contentWrapper .wickRepeat {
+      display: none; }
+    .home .section1 .contentWrapper .logo h1 {
+      font-size: 40px !important; }
+    .home .contentWrapper2 {
+      height: auto;
+      height: border-box;
+      flex-wrap: wrap; }
+      .home .contentWrapper2 .content {
+        height: auto;
+        display: inline-block;
+        padding-bottom: 20px; }
+        .home .contentWrapper2 .content .subjectsHead {
+          margin-bottom: 0; }
+          .home .contentWrapper2 .content .subjectsHead p {
+            width: 100vw; }
+        .home .contentWrapper2 .content .subjects {
+          height: 100vh;
+          width: 100vw;
+          flex-direction: column !important; }
+          .home .contentWrapper2 .content .subjects .subject {
+            margin-bottom: 50px;
+            width: 100vw !important; }
+            .home .contentWrapper2 .content .subjects .subject p {
+              width: 100vw; } }
 
 /*# sourceMappingURL=home.css.map */

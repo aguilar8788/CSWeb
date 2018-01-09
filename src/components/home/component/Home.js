@@ -33,6 +33,7 @@ class Home extends Component {
             }
         }
         this.handleScroll = this.handleScroll.bind(this)
+        this.renderCandleSticks = this.renderCandleSticks.bind(this)
     }
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
@@ -81,8 +82,8 @@ class Home extends Component {
         }
     }
 
-    render() {
-        let candleStyle1 = {
+    renderCandleSticks() {
+          let candleStyle1 = {
             marginTop: this.state.candle1.marginTop,
             transition: this.state.candle1.transition
         }
@@ -104,57 +105,62 @@ class Home extends Component {
             height: this.state.candle4.height,
             backgroundColor: this.state.candle4.color
         }
+
+        return (
+            <div className="contentWrapper">
+                <div className="wick" style={candleStyle1}>
+                    <div className="candleStick1">
+                    </div>
+                </div>
+                <div className="wick" style={candleStyle2}>
+                    <div className="candleStick1">
+                    </div>
+                </div>
+                <div className="wick" style={candleStyle3}>
+                    <div className="candleStick1">
+                    </div>
+                </div>
+
+                <div className="wick" style={candleStyle4}>
+                    <div className="candleStick1">
+                    </div>
+                </div>
+                <div className="wick wickRepeat" style={candleStyle1}>
+                    <div className="candleStick1">
+                    </div>
+                </div>
+                <div className="wick wickRepeat" style={candleStyle2}>
+                    <div className="candleStick1">
+                    </div>
+                </div>
+                <div className="wick wickRepeat" style={candleStyle3}>
+                    <div className="candleStick1">
+                    </div>
+                </div>
+
+                <div className="wick wickRepeat" style={candleStyle4}>
+                    <div className="candleStick1">
+                    </div>
+                </div>
+            </div>
+        )
+    }
+
+    render() {
         let logo = {
             height: this.state.logo.height,
             transition: this.state.logo.transition
         }
         let currentTime = new Date()
-        console.log("state", this.state)
-        console.log("props", this.props)
         return(
             <div className="home">
-
                 <div className="section1">
-
                     <div className="contentWrapper">
                         <div className="logo" style={logo}>
                             <h1>Crypto currency</h1>
                             <h1>for the rest of us!</h1>
                         </div>
-                        <div className="wick" style={candleStyle1}>
-                            <div className="candleStick1">
-                            </div>
-                        </div>
-                        <div className="wick" style={candleStyle2}>
-                            <div className="candleStick1">
-                            </div>
-                        </div>
-                        <div className="wick" style={candleStyle3}>
-                            <div className="candleStick1">
-                            </div>
-                        </div>
-
-                        <div className="wick" style={candleStyle4}>
-                            <div className="candleStick1">
-                            </div>
-                        </div>
-                        <div className="wick" style={candleStyle1}>
-                            <div className="candleStick1">
-                            </div>
-                        </div>
-                        <div className="wick" style={candleStyle2}>
-                            <div className="candleStick1">
-                            </div>
-                        </div>
-                        <div className="wick" style={candleStyle3}>
-                            <div className="candleStick1">
-                            </div>
-                        </div>
-
-                        <div className="wick" style={candleStyle4}>
-                            <div className="candleStick1">
-                            </div>
-                        </div>
+                        {this.renderCandleSticks()}
                     </div>
                 </div>
                 <div className="contentWrapper2">
@@ -169,7 +175,7 @@ class Home extends Component {
                         </div>
                         <div className="subjects">
                             <div className="subject">
-                                <h1>Trading/Exchanges</h1>
+                                <h1>Trading/Exchanges </h1>
                                 <p>
                                     In depth explanations showing you how easy it is to get started with crypto trading. How is a crypto coin different from a stock
                                     We will get you up and running buying alt coins, and also show how to store them.
@@ -208,22 +214,21 @@ class Home extends Component {
                     <div className="imageContainer">
                     <div className="bio">
                         <img className="savageImage" src={require('../../../images/JT.png')}/>
-                        <p className="para">Joe is an IT Savage and all American fuck boi.</p>
+                        <p>Joe Tynan</p>
+                        <p>Infrastructure Analyst</p>
                     </div>
                     <div className="bio">
                         <img className="savageImage" src={require('../../../images/PA.png')} />
-                        <p>Mexican of the year. Loves tacos</p>
+                        <p>Peter Aguilar</p>
+                        <p>Freelance web/iOS Developer.</p>
                     </div>
                     <div className="bio">
                         <img className="savageImage" src={require('../../../images/KV.png')} />
-                        <p>People call him the king of crypto. We just call him KV afsldfkjasldkfjalsdkfjlaksdfads</p>
+                        <p>Kiril Valtchev</p>
+                        <p>Senior Risk Management Analyst</p>
                     </div>
                     </div>
                 </div>
-                <footer>
-                    <p>Disclaimer: We do not give financial advice. Our videos are for informational purposes only.</p>
-                    <p>&copy;The Crypto Savages {currentTime.getFullYear()}</p>
-                </footer>
             </div>
         )
     }

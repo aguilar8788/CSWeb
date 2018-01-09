@@ -1,0 +1,13 @@
+footer {
+  width: 100vw;
+  background-color: rgba(200, 200, 200, 0.9);
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+}

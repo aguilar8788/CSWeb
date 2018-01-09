@@ -24,7 +24,7 @@ class NavBar extends Component {
                 <div className="logo">
                     <IndexLink className="logoLink" to="/" activeClassName="active"><h1>THE CRYPTO SAVAGES</h1></IndexLink>
                 </div>
-                <ul>
+                <ul className="navigationLinks">
                     <li><IndexLink to="/data" activeClassName="active">Data</IndexLink></li>
                     <li><IndexLink to="/crypto" activeClassName="active">Crypto</IndexLink></li>
                     <li><IndexLink to="/blockchain" activeClassName="active">Blockchain</IndexLink></li>

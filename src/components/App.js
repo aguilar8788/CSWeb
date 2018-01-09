@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import {Link, IndexLink} from 'react-router'
-import  NavBar from './common/navBar/component/NavBar'
+import NavBar from './common/navBar/component/NavBar'
+import Footer from './common/footer/Footer'
 
 class App extends Component {
     render() {
@@ -11,6 +12,7 @@ class App extends Component {
                 </div>
 
                 {this.props.children}
+                <Footer/>
             </div>
         )
     }
