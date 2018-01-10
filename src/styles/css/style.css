@@ -297,7 +297,7 @@ footer {
   align-items: center; }
   footer p {
     display: inline-block;
-    margin: 0;
-    padding: 0; }
+    padding: 0 10px 0 10px;
+    margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

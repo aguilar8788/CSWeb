@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
-import {Link, IndexLink} from 'react-router'
-import {connect} from 'react-redux'
+import {IndexLink} from 'react-router'
 
 class NavBar extends Component {
     constructor(props, context) {
@@ -22,13 +20,15 @@ class NavBar extends Component {
         } else {
             this.setState({showNavMobile: true})
         }
+    }
 
+    componentWillUnmount() {
 
     }
 
     showSocialDropDown() {
         let showSocialBool = this.state.showSocial
-        this.setState({showSocial: showSocialBool ? false : true})
+        this.setState({showSocial: !showSocialBool})
     }
 
     showNavMobile() {
@@ -38,7 +38,7 @@ class NavBar extends Component {
 
         if (width < 500) {
             let showNavMobile = this.state.showNavMobile
-            this.setState({showNavMobile: showNavMobile ? false : true})
+            this.setState({showNavMobile: !showNavMobile})
         }
     }
 
@@ -46,9 +46,7 @@ class NavBar extends Component {
         return (
             <nav className="navigation navbar fixed-top">
                 <div className="logo">
-
                     <IndexLink className="logoLink" to="/" activeClassName="active"><h1>THE CRYPTO SAVAGES</h1></IndexLink>
-
                     <a href="#" onClick={this.showNavMobile}><img className="hamburgerMenu" src={require('../../../../images/list.png')} /></a>
                 </div>
                 <ul className="navigationLinks" style={this.state.showNavMobile  === false ? {display: 'none'} : {display: 'flex'}}>
@@ -70,17 +68,4 @@ class NavBar extends Component {
     }
 }
 
-NavBar.propTypes = {
-
-}
-
-NavBar.contextTypes = {
-    router: PropTypes.object
-}
-
-function mapStateToProps(state, ownProps) {
-    return {
-    }
-}
-
-export default connect(mapStateToProps)(NavBar)
+export default NavBar

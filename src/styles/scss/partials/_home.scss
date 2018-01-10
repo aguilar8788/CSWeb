@@ -207,7 +207,7 @@
     .contentWrapper2 {
       height: auto;
       height: border-box;
-        flex-wrap: wrap;
+      flex-wrap: wrap;
       .content {
         height: auto;
         display: inline-block;
@@ -220,16 +220,16 @@
         }
         .subjects {
           height: 100vh;
-           width: 100vw;
-           flex-direction: column !important;
-      .subject {
-        margin-bottom: 50px;
-        width: 100vw !important;
-        p {
           width: 100vw;
+          flex-direction: column !important;
+          .subject {
+            margin-bottom: 50px;
+            width: 100vw !important;
+            p {
+              width: 100vw;
+            }
+          }
         }
-      }
-    }
       }
     }
 
