@@ -8,6 +8,7 @@ import BlockChain from './components/blockchain/component/BlockChain'
 import Exchanges from './components/exchanges/component/Exchanges'
 import Discussions from './components/discussions/component/Discussion'
 import Contact from './components/contact/component/Contact'
+import Blog from './components/blog/component/Blog'
 
 export default (
     <Route path="/" component={App}>
@@ -17,6 +18,7 @@ export default (
         <Route path="/blockchain" component={BlockChain} />
         <Route path="/exchanges" component={Exchanges} />
         <Route path="/discussions" component={Discussions} />
+        <Route path="/blog" component={Blog} />
         <Route path="/contact" component={Contact} />
     </Route>
 )

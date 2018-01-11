@@ -55,6 +55,7 @@ class NavBar extends Component {
                     {/*<li><IndexLink to="/blockchain" activeClassName="active">Blockchain</IndexLink></li>*/}
                     {/*<li><IndexLink to="/exchanges" activeClassName="active">Exchanges</IndexLink></li>*/}
                     {/*<li><IndexLink to="/discussions" activeClassName="active">Discussions</IndexLink></li>*/}
+                    <li><IndexLink to="/blog" activeClassName="active">Blog</IndexLink></li>
                     {/*<li><IndexLink to="/contact" activeClassName="active">Contact</IndexLink></li>*/}
                     <li className="socialDropDown" onClick={this.showSocialDropDown}><a href="#">Social Media</a></li>
                     <ul className="socialMedia dropdown-menu" onMouseLeave={this.showSocialDropDown} style={this.state.showSocial  === false ? {display: 'none'} : {display: 'inline-block'}}>

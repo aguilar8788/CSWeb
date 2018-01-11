@@ -10,12 +10,11 @@ class Home extends Component {
     }
 
 
-
     render() {
         return(
             <div className="home">
                 <div className="section1">
-                        <CandleSticks/>
+                        <CandleSticks />
                 </div>
                 <MissionContent/>
                 <div className="section2">

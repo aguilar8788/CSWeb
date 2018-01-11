@@ -29,6 +29,17 @@ class CandleSticks extends Component {
             logo: {
                 height: '',
                 transition: ''
+            },
+            hideCandles: {
+                display: '',
+                webopacity: '',
+                mozopacity: '',
+                opacity: '',
+                webkittransition: '',
+                moztransition: '',
+                mstransition: '',
+                otransition: '',
+                transition: ''
             }
         }
         this.handleScroll = this.handleScroll.bind(this)
@@ -77,6 +88,39 @@ class CandleSticks extends Component {
                 candle3: {marginTop: '220px', transition: 'all 1.9s cubic-bezier(.25,.8,.25,1)', height: '40px', color: '#c43905'},
                 candle4: {marginTop: '140px', transition: 'all 1.9s cubic-bezier(.25,.8,.25,1)', height: '40px', color: '#84BA4D'},
                 logo: {height: (100 + scrollTop) + 'vh', transition: 'all 1.9s cubic-bezier(.25,.8,.25,1)'}
+
+            })
+        }
+
+        if (scrollTop > 20) {
+            this.setState({
+                hideCandles: {
+                    webopacity: '0.1',
+                    mozopacity: '0.1',
+                    opacity: '0.1',
+                    webkittransition: 'all 2s ease',
+                    moztransition: 'all 2s ease',
+                    mstransition: 'all 2s ease',
+                    otransition: 'all 2s ease',
+                    transition: 'all 2s ease'
+                }
+            })
+        } else {
+            this.setState({
+                hideCandles: {
+                    display: '',
+                    webopacity: '0.99',
+                    mozopacity: '0.99',
+                    opacity: '0.99'
+                }
+            })
+        }
+
+        if (scrollTop > 300) {
+            this.setState({
+                hideCandles: {
+                    display: 'none'
+                }
             })
         }
     }
@@ -108,8 +152,19 @@ class CandleSticks extends Component {
             height: this.state.logo.height,
             transition: this.state.logo.transition
         }
+        let del = {
+            display: this.state.hideCandles.display,
+            '-webkit-opacity': this.state.hideCandles.webopacity,
+            '-moz-opacity': this.state.hideCandles.mozopacity,
+            opacity: this.state.hideCandles.opacity,
+            ' -webkit-transition': this.state.hideCandles.webkittransition,
+            '-moz-transition': this.state.hideCandles.moztransition,
+            '-ms-transition': this.state.hideCandles.mstransition,
+            '-o-transition': this.state.hideCandles.otransition,
+            transition: this.state.hideCandles.transition
+        }
         return(
-            <div className="contentWrapper">
+            <div className="contentWrapper" style={del}>
             <div className="logo" style={logo}>
                 <h1>Crypto currency</h1>
                 <h1>for the rest of us!</h1>

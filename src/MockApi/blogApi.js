@@ -1,0 +1,18 @@
+const blog = {
+    title: 'The Crazy World of Crypto',
+    author: 'Peter Aguilar',
+    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi ante, fermentum nec nunc sit amet, efficitur blandit augue. Nullam aliquam purus risus, ac semper est rutrum in. Cras feugiat suscipit erat, quis suscipit arcu pellentesque ac. Maecenas volutpat, elit eu sagittis maximus, ante ex ultrices mauris, vitae mattis sapien tellus ac arcu. Donec molestie pellentesque neque ut maximus. Proin nec ligula interdum, eleifend felis vel, blandit nisl. Maecenas urna dui, auctor convallis massa et, consequat placerat tellus. Cras eu fringilla arcu. Nulla molestie dui a augue maximus, eu faucibus ligula vestibulum. Nulla facilisi. Cras et turpis pellentesque, auctor arcu eget, venenatis ex. Ut pulvinar, ex vitae finibus tincidunt, risus magna luctus mauris, vel cursus risus ex in est. Aliquam placerat viverra est, quis tincidunt ante lobortis sit amet. Nullam non rhoncus nisl. Proin libero nisl, sagittis id ex at, elementum faucibus lacus. Aenean aliquet ultricies tincidunt.\n' +
+    '\n' +
+    'Praesent porttitor condimentum diam in placerat. Nulla vestibulum at arcu eget cursus. Proin velit enim, tincidunt quis faucibus eu, mollis a nunc. Morbi vehicula at nulla et pellentesque. Sed quis lacus sed est porta vestibulum venenatis ut nunc. Donec id nulla hendrerit, volutpat diam eu, tristique nibh. Nullam ipsum ex, porttitor a libero laoreet, placerat convallis massa. Quisque ex nunc, tincidunt vitae est non, porta pellentesque ex. Suspendisse id tellus sit amet felis interdum dictum vel at arcu. Nam et sem quam. Cras egestas odio turpis, a aliquam risus pulvinar eget. Quisque rutrum pulvinar lacus vitae ornare.\n' +
+    '\n' +
+    'Donec pharetra vel lacus sit amet interdum. Morbi porttitor nisl suscipit dui consectetur mollis. Proin tincidunt ligula gravida, consequat ante a, facilisis nulla. Proin ultrices luctus augue sit amet tristique. Vivamus eleifend, turpis id egestas rutrum, neque libero accumsan lacus, in ornare justo erat sed leo. Maecenas consectetur facilisis ipsum vel feugiat. Fusce et diam vitae tortor aliquet ornare. Praesent id risus magna. Pellentesque non ex nec diam fermentum suscipit. Aliquam fermentum auctor pharetra. Sed eu dolor ut augue aliquet dictum vitae vel arcu.\n' +
+    '\n' +
+    'Fusce gravida luctus magna, id egestas mauris congue a. Vestibulum euismod vestibulum maximus. Vivamus tempus laoreet neque, porttitor posuere orci tincidunt vel. Cras at turpis purus. Vivamus euismod nulla vitae risus porta mollis vitae ornare urna. Phasellus eleifend justo nec lacinia congue. Donec euismod nibh eget metus posuere dignissim. Maecenas commodo quam tortor, at luctus neque scelerisque et. Suspendisse convallis lobortis nunc vitae placerat. Sed porta feugiat eros, viverra congue elit vehicula eget. Vestibulum a scelerisque tellus. Vestibulum sagittis risus quam, id euismod sapien placerat sit amet. Quisque pretium, augue nec malesuada fermentum, sem diam laoreet massa, non consequat dui risus ac felis. Integer quis lectus non elit ultricies tincidunt.\n' +
+    '\n' +
+    'Cras a tristique nisl, pulvinar porttitor orci. Nunc ac mollis sapien. Sed suscipit, urna quis convallis hendrerit, nisi turpis interdum elit, at pharetra nisi enim et enim. Donec ac tellus neque. Nullam id luctus urna. Maecenas consectetur eu massa eu lacinia. Aenean sagittis lectus non tortor imperdiet commodo sit amet ornare libero.',
+    images: 'https://venturebeat.com/wp-content/uploads/2017/10/untitled-design5.jpg?fit=578%2C409&strip=all',
+    videos: '',
+    keywords: ['crypto', 'money', 'crazy world', 'bitcoin', 'altcoins', 'ripple']
+}
+
+export default blog
