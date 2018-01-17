@@ -154,13 +154,13 @@ class CandleSticks extends Component {
         }
         let del = {
             display: this.state.hideCandles.display,
-            '-webkit-opacity': this.state.hideCandles.webopacity,
-            '-moz-opacity': this.state.hideCandles.mozopacity,
+            WebkitOpacity: this.state.hideCandles.webopacity,
+            MozOpacity: this.state.hideCandles.mozopacity,
             opacity: this.state.hideCandles.opacity,
-            ' -webkit-transition': this.state.hideCandles.webkittransition,
-            '-moz-transition': this.state.hideCandles.moztransition,
-            '-ms-transition': this.state.hideCandles.mstransition,
-            '-o-transition': this.state.hideCandles.otransition,
+            WebKitTransition: this.state.hideCandles.webkittransition,
+            MozTransition: this.state.hideCandles.moztransition,
+            msTransition: this.state.hideCandles.mstransition,
+            OTransition: this.state.hideCandles.otransition,
             transition: this.state.hideCandles.transition
         }
         return(

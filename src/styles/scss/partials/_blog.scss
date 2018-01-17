@@ -1,0 +1,15 @@
+.BlogContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .blogPost {
+    width: 80vw;
+    padding-top: 20px;
+    h1 {
+      text-align: center;
+    }
+    p:nth-child(2) {
+      text-align: center;
+    }
+  }
+}

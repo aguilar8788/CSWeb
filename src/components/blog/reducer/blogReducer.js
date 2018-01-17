@@ -5,9 +5,7 @@ import {
 export default function blogReducer(state = {}, action) {
     switch(action.type) {
         case LOAD_BLOG_POST_SUCCESS:
-            return Object.assign({}, state, {
-                blogPost: action.post
-            })
+            return Object.assign({}, state, {post: action.post})
         default:
             return state
     }

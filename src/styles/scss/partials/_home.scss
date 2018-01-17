@@ -11,6 +11,7 @@
       height: 100vh;
     }
     .contentWrapper {
+      margin-top: -80px;
       z-index: -1;
       background: rgba(240, 240, 240, 0.5);
       .candles {
@@ -206,7 +207,7 @@
     }
     .contentWrapper2 {
       height: auto;
-      height: border-box;
+      box-sizing: border-box;
       flex-wrap: wrap;
       .content {
         height: auto;

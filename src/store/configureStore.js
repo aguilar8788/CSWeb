@@ -6,6 +6,7 @@ import thunk from 'redux-thunk'
 
 const logger = createLogger()
 
+
 export default function configureStore(initialState) {
 	return createStore(
 		rootReducer,
@@ -13,3 +14,4 @@ export default function configureStore(initialState) {
 		applyMiddleware(thunk, logger, reduxImmutableStateInvariant())
 	)
 }
+
