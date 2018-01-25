@@ -14,9 +14,7 @@ class Blog extends Component {
     }
 
     getUrlFromString(body) {
-        var imageUrl = body.match(/\bhttps?:\/\/\S+/gi)
-        console.log("image", imageUrl)
-
+        let imageUrl = body.match(/\bhttps?:\/\/\S+/gi)
         return imageUrl.map((url) => {
             if (url.indexOf("steemitimages") >= 0) {
                 return (
@@ -43,7 +41,6 @@ class Blog extends Component {
 
     renderPosts(arrayOfPosts) {
         return arrayOfPosts.map((posts, key) => {
-            console.log("posts", posts)
             let title = posts.permlink
             let removeDashes = title.replace(/-/g, ' ')
             let removeImgUrls = this.removeUrlsFromString(posts.body)
@@ -52,8 +49,7 @@ class Blog extends Component {
                     <div className="blogPost">
                         <h1>{removeDashes.toUpperCase()}</h1>
                         <p>by: {posts.author}</p>
-                        <p>{removeImgUrls}<a href={`https://steemit.com${posts.url}`}> ...Continue reading post</a></p>
-
+                        <p>{removeImgUrls}<a href={`https://steemit.com${posts.url}`} target="_blank"> ...Continue reading post</a></p>
                     </div>
                 </div>
             )
@@ -62,12 +58,9 @@ class Blog extends Component {
 
 
     render() {
-            console.log("state", this.state)
-            console.log("props", this.props)
         return (
             <div className="BlogContainer container-fluid">
                 {this.props.blogPost ? this.renderPosts(this.props.blogPost) : ''}
-                {console.log("props", this.props)}
             </div>
         )
     }
@@ -79,7 +72,6 @@ Blog.propTypes = {
 }
 
 function mapStateToProps(state, ownProps) {
-    console.log("red", state.blogReducer.post)
     return {
         blogPost: state.blogReducer.post
     }

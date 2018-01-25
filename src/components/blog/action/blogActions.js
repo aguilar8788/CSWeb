@@ -12,20 +12,20 @@ export function loadBlogPosts() {
     steem.api.setOptions({ url: 'https://api.steemit.com'});
 
     var query = {
-        tag: 'kv151',
+        tag: 'thecryptosavages',
         limit: 100
     }
      return (dispatch, getState) => {
-         steem.api.getDiscussionsByBlog(query, function (err, result) {
+         steem.api.getDiscussionsByTrending(query, function (err, result) {
              if (err) {
                  console.log("error: ", err)
              }
-
              if (result) {
                  for (var i = 0; i < result.length; i++) {
-                     if (result[i].author === 'kv151' && result[i].category ===  'cryptocurrency') {
-                         postsArray.push(result[i])
+                     if (result[i].author === 'kv151' || result[i].author === "paguilarjr") {
+                                 postsArray.push(result[i])
                      }
+
                  }
              }
              dispatch(loadBlogPostsSuccess(postsArray))
