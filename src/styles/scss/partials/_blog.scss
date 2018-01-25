@@ -1,16 +1,14 @@
 .BlogContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height: 91vh;
+  display: inline-block;
   .blogPost {
-    height: 25vh;
-    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 90vw;
     padding-top: 20px;
     h1 {
-      font-family: 'Maven Pro', sans-serif;
       text-align: center;
+      font-family: 'Maven Pro', sans-serif;
     }
     p:nth-child(2) {
       font-size: 20px;
@@ -18,4 +16,15 @@
       font-family: 'Open Sans Condensed', sans-serif;
     }
   }
+
+  /* Portrait and Landscape */
+  @media only screen
+  and (min-device-width: 300px)
+  and (max-device-width: 700px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .blogPost {
+      height: auto;
+    }
+  }
 }
+
